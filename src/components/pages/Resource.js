@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import "../../blogPost.css"
 import ResourceContext from '../../context/ResourceContext/resourceContext';
 import { Link } from 'react-router-dom';
-import ResourceComponentText from './ArticleSubComponents/ResourceComponentText';
-import ResourceComponentLink from './ArticleSubComponents/ResourceComponentLink';
+// import ResourceComponentText from './ArticleSubComponents/ResourceComponentText';
+// import ResourceComponentLink from './ArticleSubComponents/ResourceComponentLink';
 import Article1 from "../../images/Article1Img.jpg";
 import Article2 from "../../images/Article2Img.jpg";
 import Article3 from "../../images/Article3Img.jpg";
@@ -28,7 +28,7 @@ const Resource = () => {
     const loginParam = useParams();
     useEffect(() => {
         displayArticlePage(loginParam.article);
-        console.log(article);
+        // eslint-disable-next-line
     }, []);
 
     // const parser = (article) => {
@@ -50,7 +50,6 @@ const Resource = () => {
     //     // console.log(toP);
     //     return toPrint;
     // }
-    //this works but doesn't work due to anti innerhtml protection. Make this return an array of alternating text/[link, linkName] strings 
     
     return (
         <div className="blogPostCDWrapper">
@@ -60,16 +59,15 @@ const Resource = () => {
                 <div className="contentdiv2">
         
                     <p><b><i className="what-if-it-was-green">/</i>{title}<i className="what-if-it-was-green">/</i></b></p>
-                            {/* <p><a className="three" href={parser(article)[0]}>{parser(article)[1]}</a></p> */}
-                            {/* <p dangerouslySetInnerHTML={{ __html: article}}/> */}
+                            <p dangerouslySetInnerHTML={{ __html: article}}/>
                             {/* <p dangerouslySetInnerHTML={{ __html: parser(article)}}/> */}
-                            {article !== "" && article.map((articleEl, index) => {
+                            {/* {article !== "" && article.map((articleEl, index) => {
                                if(index % 2 === 0) {
                                     return <ResourceComponentText text={articleEl} key={articleEl}/>
                                 }else{
                                     return <ResourceComponentLink link={articleEl[0]} key={articleEl}/>
                                 }
-                            })}         
+                            })}          */}
                 </div>
                 
                     <div><Link className="back" to="/Resources">Back</Link></div>
