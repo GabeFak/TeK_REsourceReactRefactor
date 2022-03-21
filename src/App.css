@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+/*/////////////////////////Int/////////////////////////*/
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+/*/////////////////////////End_Int/////////////////////////*/
+
+/*/////////////////////////Links/FloatClear/Extras/////////////////////////*/
+.clr {
+  clear: both;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:visited {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a:hover {
+  color: #808080;
+}
+
+a:active {
+  color: #c0c0c0;
+}
+/*/////////////////////////End_Links/FloatClear/Extras/////////////////////////*/
+
+/*/////////////////////////Body/////////////////////////*/
+body {
+  background-image: url(./components/SFFd.gif);
+}
+/*/////////////////////////End_Body/////////////////////////*/
+
+/*/////////////////////////Make_Some_Text_Green/////////////////////////*/
+.what-if-it-was-green {
+  color: rgb(0, 255, 64);
+  /* display: inline; */
+}
+/*/////////////////////////End_Make_Some_Text_Green/////////////////////////*/
+
+/*/////////////////////////New_Header/////////////////////////*/
+header {
+  /*global header properties*/
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.1em;
+  position: fixed;
+
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-image: url(./components/SFFd.gif);
+  color: white;
+  opacity: 1;
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.hi {
+  /*This is the Logo*/
+  width: 45%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: left;
+}
+
+.hcontainer {
+  /*container for header*/
+  box-sizing: border-box;
+  font-weight: 100;
+  font-style: italic;
+  float: right;
+  width: 55%;
+  text-align: right;
+  padding: 8px;
+  word-spacing: 1em;
+}
+
+.hcontainerlink {
+  font-size: 0.9em;
+  display: inline-table;
+  margin-right: 35px;
+}
+
+.hcontainerlink {
+  transition: font-size 500ms;
+}
+
+.hcontainerlink:hover {
+  font-size: 1em;
+}
+/*/////////////////////////End_New_Header/////////////////////////*/
+
+/*/////////////////////////Side_Vertical_Links_Other/////////////////////////*/
+.medialinks {
+  writing-mode: vertical-lr; /*sideways-lr formerly but not supported on most browsers*/
+  display: inline;
+  position: fixed;
+  top: 30%;
+  left: 30px;
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+
+nav#medialinktext {
+  word-spacing: 1em;
+  letter-spacing: 0.4em;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.4em;
+}
+
+#medialink {
+  font-size: 1em;
+  color: white;
+}
+
+.spacer {
+  padding-bottom: 111px; /*the same hight as the header*/
+}
+/*/////////////////////////End_Side_Vertical_Links_Other/////////////////////////*/
+
+/*/////////////////////////Animations/////////////////////////*/
+@keyframes fade-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
+/*/////////////////////////End_Animations/////////////////////////*/
+
+/*/////////////////////////Media_Quieries/////////////////////////*/
+@media (max-width: 1355px) {
+  header {
+    font-size: 1.5em;
+  }
+}
+/*/////////////////////////End_Media_Quieries/////////////////////////*/
+/*ForHOME_ABOUT_CONTACT.html*/
+
+/*/////////////////////////Links_Visited/////////////////////////*/
+a.four {
+  text-decoration: none;
+  color: rgb(0, 255, 64);
+}
+
+a.four:hover {
+  color: #808080;
+}
+
+a.four:active {
+  color: #ff0000;
+}
+/*/////////////////////////End_Links_Visited/////////////////////////*/
+
+/*/////////////////////////Back_Button_Link/////////////////////////*/
+a.five {
+  text-decoration: none;
+  color: rgb(0, 255, 64);
+}
+
+a.five:hover {
+  color: #808080;
+}
+
+a.five:active {
+  color: #ff0000;
+}
+/*/////////////////////////End_Back_Button_Link/////////////////////////*/
+
+/*/////////////////////////Content_Div/////////////////////////*/
+
+.contentdiv {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  padding: 10px 100px;
+  columns: 450px 3;
+  min-height: 10%;
+  /* border: 5px solid red; */
+
+  font-family: "Roboto";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
+  text-align: left;
+  color: white;
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0%);
+  opacity: 0%;
+}
+
+p,
+h3 {
+  margin-top: 0;
+}
+
+/*/////////////////////////Recomended_Widget////////////////////*/
+.recomendedImage {
+  position: inherit;
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: auto\9;
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.recomended {
+  position: relative;
+}
+
+.discription {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.4em;
+  color: rgb(0, 255, 64);
+
+  letter-spacing: 0.2em;
+  background: rgba(0, 0, 0, 0.5);
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+/*/////////////////////////End_Recomended_Widget////////////////////*/
+
+/*/////////////////////////Links_Visited_Widget////////////////////*/
+#links-visited-widget {
+  /* position: relative;
+    display: grid; */
+  position: absolute;
+
+  top: 510px;
+  left: 100px;
+  margin-right: 100px;
+}
+
+.highLightBorder {
+  border: 5px solid rgb(0, 255, 64);
+  padding: 20px 50px;
+
+  font-family: "Roboto";
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: 6px;
+  word-spacing: 0.2em;
+  text-align: left;
+  list-style: none;
+  color: white;
+}
+
+.all-the-links {
+  list-style: none;
+}
+
+.li-link-style {
+  display: inline-flex;
+}
+
+.copyButton {
+  text-decoration: none;
+  color: white;
+  border: 0;
+  background: none;
+  width: 75px;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.copyButton:hover {
+  background-color: rgb(0, 255, 64, 0.15);
+}
+
+.copyButton:active {
+  background-color: rgb(128, 128, 128, 0.15);
+  color: rgb(0, 255, 64);
+}
+
+/*/////////////////////////End_Links_Visited_Widget////////////////////*/
+
+/*/////////////////////////End_Content_Div/////////////////////////*/
+
+/*/////////////////////////Media_Quieries/////////////////////////*/
+@media (max-width: 1119px) {
+  .contentdiv {
+    left: 50px;
+    font-size: 1em;
+    padding: 10px 50px;
+  }
+
+  #links-visited-widget {
+    top: 350px;
+    left: 50px;
+  }
+
+  .highLightBorder {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 900px) {
+  #links-visited-widget {
+    top: 450px;
+  }
+}
+
+@media (max-width: 700px) {
+  #links-visited-widget {
+    font-size: 0.6em;
+    top: 650px;
+  }
+}
+/*/////////////////////////End_Media_Quieries/////////////////////////*/

@@ -1,0 +1,108 @@
+/*/////////////////////////Resources_Page_Link_Override/////////////////////////*/
+a.two {
+  text-decoration: none;
+  color: white;
+}
+
+a.two:visited {
+  color: white;
+}
+
+a.two:hover {
+  color: #808080;
+}
+
+a.two:active {
+  color: #c0c0c0;
+}
+/*/////////////////////////End_Resources_Page_Link_Override/////////////////////////*/
+
+/*/////////////////////////Posts_Divs/////////////////////////*/
+.resourceImg {
+  position: inherit;
+  max-width: 100%;
+  object-fit: cover;
+  height: 80vh;
+  width: auto\9;
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.resourceImg {
+  transition: height 500ms;
+}
+
+.resourceImg:hover {
+  height: 82vh;
+}
+
+.imageAndTextWrapper {
+  position: relative;
+}
+
+.innerTex {
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.6em;
+
+  letter-spacing: 0.2em;
+  background: rgba(0, 0, 0, 0.75);
+
+  animation: fade-in 500ms forwards;
+  transform: scale(0);
+  opacity: 0;
+}
+/*/////////////////////////End_Posts_Divs/////////////////////////*/
+
+/*/////////////////////////Post_Container/////////////////////////*/
+.contentdivR {
+  /*contentdiv for resources.css*/
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  padding: 10px 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+}
+/*/////////////////////////End_Post_Container/////////////////////////*/
+
+/*/////////////////////////@MediaQ/////////////////////////*/
+@media (max-width: 1479px) {
+  .contentdivR {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 879px) {
+  .contentdivR {
+    grid-template-columns: repeat(1, 1fr);
+    left: 50px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .innerTitleTex {
+    font-size: 1em;
+  }
+}
+
+@media (max-height: 750px) {
+  /*moves text in images closer to top of image as page height decreases*/
+
+  .innerTex {
+    top: 260px;
+  }
+
+  .innerTitleTex {
+    top: 100px;
+  }
+}
+/*/////////////////////////End_@MediaQ///////////////////////*/

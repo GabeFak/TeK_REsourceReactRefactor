@@ -1,0 +1,1 @@
+export const SET_ARTICLE_STATE = "SET_ARTICLE_STATE";
