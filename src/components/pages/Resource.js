@@ -30,26 +30,6 @@ const Resource = () => {
         displayArticlePage(loginParam.article);
         // eslint-disable-next-line
     }, []);
-
-    // const parser = (article) => {
-    //     let forHTML = [];
-    //     const regX = /\|/;
-    //     const newTextArray = article.split(regX);
-
-    //         newTextArray.forEach((text, index) => {
-    //             if(index % 2 === 0) {
-    //                 forHTML.push(text);
-    //             }else{
-    //                 const splitLinkReg = /\*/
-    //                 let linkSplit = text.split(splitLinkReg)
-    //                 forHTML.push(`<a style={{color: "rgb(0, 255, 64)"}}href="${linkSplit[0]}">${linkSplit[1]}</a>`);
-    //                 // forHTML.push([[linkSplit[0], linkSplit[1]]]);
-    //             }
-    //         })
-    //     let toPrint = forHTML.join(' ');
-    //     // console.log(toP);
-    //     return toPrint;
-    // }
     
     return (
         <div className="blogPostCDWrapper">
@@ -60,14 +40,6 @@ const Resource = () => {
         
                     <p><b><i className="what-if-it-was-green">/</i>{title}<i className="what-if-it-was-green">/</i></b></p>
                             <p dangerouslySetInnerHTML={{ __html: article}}/>
-                            {/* <p dangerouslySetInnerHTML={{ __html: parser(article)}}/> */}
-                            {/* {article !== "" && article.map((articleEl, index) => {
-                               if(index % 2 === 0) {
-                                    return <ResourceComponentText text={articleEl} key={articleEl}/>
-                                }else{
-                                    return <ResourceComponentLink link={articleEl[0]} key={articleEl}/>
-                                }
-                            })}          */}
                 </div>
                 
                     <div><Link className="back" to="/Resources">Back</Link></div>
