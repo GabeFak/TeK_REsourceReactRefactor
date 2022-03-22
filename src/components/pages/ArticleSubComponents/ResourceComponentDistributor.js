@@ -10,7 +10,7 @@ const ResourceComponentDistributor = ({articleParagraph}) => {
                     return <ResourceComponentText text={articleEl} key={articleEl}/>
                 }else{
                     return <ResourceComponentLink link={articleEl[0]} key={articleEl}/>
-                }
+                };
             })}    
         </div>
     )

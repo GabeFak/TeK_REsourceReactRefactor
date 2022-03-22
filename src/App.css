@@ -152,7 +152,6 @@ nav#medialinktext {
   }
 }
 /*/////////////////////////End_Media_Quieries/////////////////////////*/
-/*ForHOME_ABOUT_CONTACT.html*/
 
 /*/////////////////////////Links_Visited/////////////////////////*/
 a.four {
@@ -184,12 +183,6 @@ a.five:active {
 }
 /*/////////////////////////End_Back_Button_Link/////////////////////////*/
 
-/*/////////////////////////P tags/////////////////////////*/
-/* p {
-  text-indent: 30px;
-} */
-/*/////////////////////////End P tags////////////////////////*/
-
 /*/////////////////////////Content_Div/////////////////////////*/
 
 .contentdiv {
@@ -199,7 +192,6 @@ a.five:active {
   padding: 10px 100px;
   columns: 450px 3;
   min-height: 10%;
-  /* border: 5px solid red; */
 
   font-family: "Roboto";
   font-weight: 100;
@@ -248,7 +240,6 @@ h3 {
   font-style: italic;
   font-size: 0.4em;
   color: rgb(0, 255, 64);
-
   letter-spacing: 0.2em;
   background: rgba(0, 0, 0, 0.5);
 
@@ -260,10 +251,7 @@ h3 {
 
 /*/////////////////////////Links_Visited_Widget////////////////////*/
 #links-visited-widget {
-  /* position: relative;
-    display: grid; */
   position: absolute;
-
   top: 510px;
   left: 100px;
   margin-right: 100px;
@@ -272,7 +260,6 @@ h3 {
 .highLightBorder {
   border: 5px solid rgb(0, 255, 64);
   padding: 20px 50px;
-
   font-family: "Roboto";
   font-weight: 100;
   font-style: italic;

@@ -23,13 +23,12 @@ const [state, dispatch] = useReducer(resourceReducer, initialState);
         Arts.forEach((Article, index)=> {
             if(articleName === Article.title) {
                 statePayload = Arts[index];
-            }
-        })
-        // console.log(statePayload);
+            };
+        });
         dispatch({
             type: SET_ARTICLE_STATE,
             payload: statePayload
-        })
+        });
     }
 
     return <resourceContext.Provider 
@@ -41,4 +40,5 @@ const [state, dispatch] = useReducer(resourceReducer, initialState);
                 displayArticlePage
             }}> {props.children} </resourceContext.Provider>
         }
+        
 export default ResourceState; 
