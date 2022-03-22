@@ -5,6 +5,7 @@ import {
 export default (state, action) => {
     switch(action.type) {
         case SET_ARTICLE_STATE:
+            
             const parser = (article) => {
                 let forHTML = [];
                 const regX = /\|/;
@@ -18,49 +19,24 @@ export default (state, action) => {
                             forHTML.push([[linkSplit[0], linkSplit[1]]]);
                         }
                     })
-                    // console.log(forHTML)
                 return forHTML;
             }
-            
-            // let splitRegion = [];
-            // const breakIntoNewParagraph = (input) => {
-            //     // let articleParagraph = [];
-            //     // let switchOver = 0;
-            //     // input.forEach(item=> {
-            //     //     articleParagraph[switchOver][].push(item);
-            //     //     if(item.includes('^')){
-            //     //         switchOver++;
-            //     //     }
-            //     // })
-            //     // return (articleParagraph)
-                
-
-            //     input.forEach((item, index) => {
-            //         if(item.includes("^")) {
-            //             splitRegion.push(index);
-            //         }
-            //     })
-            // }
-            let foo = parser(action.payload.article)
-            foo.toString();
+            let foo = [];
+            if(typeof(action.payload.article) === 'string'){
+                foo = [parser(action.payload.article)];
+            }else{
+                let pass = Object.values(action.payload.article);
+                pass.forEach(item => {
+                    foo.push(parser(item));
+                    console.log(item)
+                })
+            }
             console.log(foo)
-
-            // let sliced = []
-            // foo.forEach((item, index)=> {
-            //     let lastIndex = 0;
-            //     if(item.includes("^")) {
-            //         sliced.push(foo.slice(lastIndex, index));
-            //         lastIndex = index;
-            //         sliced.push(foo.slice(lastIndex, index));
-            //     }
-            //     console.log(sliced)
-            // })
             return {
                 ...state,
                 title: action.payload.title,
                 description: action.payload.Description,
-                article: parser(action.payload.article),
-                // article: action.payload.article,
+                article: foo,
                 img: action.payload.img
             }
         default:
