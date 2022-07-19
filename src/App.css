@@ -501,6 +501,294 @@ button[type="submit"]:hover {
   }
 }
 /*/////////////////////////Media_Quieries/////////////////////////*/
+
+
+@media (min-width: 1930px) {
+  header {
+    font-size: 2.7em;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-image: url(./components/SFFd.gif);
+  }
+  
+  .hcontainer {
+    padding: 16px;
+    word-spacing: 1.4em;
+  }
+
+  .medialinks {
+    top: 40%;
+    left: 40px;
+  }
+  
+  nav#medialinktext {
+    word-spacing: 1.4em;
+    letter-spacing: 0.6em;
+    letter-spacing: 0.6em;
+  }
+  
+  #medialink {
+    font-size: 1.6em;
+  }
+
+  .contentdiv {
+    top: 350px;
+    left: 250px;
+    padding: 10px 100px;
+    columns: 650px 3;
+    min-height: 20%;
+    font-size: 2em;
+  }
+  
+  .contentdiv-contact {
+    top: 350px;
+    left: 250px;
+    width: 80%;
+  }
+  
+  p,
+  h3 {
+    margin-top: 0;
+  }
+
+  .form-center {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  form {
+    border: 4px solid white;
+    padding: 35px;
+    width: 750px;
+    font-size: 1.8em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 24px 36px;
+    margin: 18px 0;
+    border: 3px solid white;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 16px 22px;
+    margin: 12px 0;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 2048px) {
+  header {
+    font-size: 3em;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+  
+  .hcontainer {
+    padding: 16px;
+    word-spacing: 1.4em;
+  }
+
+  .medialinks {
+    top: 50%;
+    left: 50px;
+  }
+  
+  nav#medialinktext {
+    word-spacing: 1.4em;
+    letter-spacing: 0.6em;
+    letter-spacing: 0.6em;
+  }
+  
+  #medialink {
+    font-size: 1.8em;
+  }
+
+  .contentdiv {
+    top: 400px;
+    left: 300px;
+    padding: 10px 100px;
+    columns: 750px 3;
+    min-height: 30%;
+    font-size: 2.4em;
+  }
+
+  .contact-title h1 {
+    font-size: 2.8em;
+  }
+
+  .form-center {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  
+  form {
+    border: 5px solid white;
+    padding: 45px;
+    width: 950px;
+    font-size: 2.2em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    border-radius: 6px;
+  }
+  
+  button[type="submit"] {
+    border-radius: 6px;
+  }
+}
+
+/* @media (min-width: 2560px){
+  header {
+    font-size: 2.7em;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-image: url(./components/SFFd.gif);
+  }
+  
+  .hcontainer {
+    padding: 16px;
+    word-spacing: 1.4em;
+  }
+
+  .medialinks {
+    top: 40%;
+    left: 40px;
+  }
+  
+  nav#medialinktext {
+    word-spacing: 1.4em;
+    letter-spacing: 0.6em;
+    letter-spacing: 0.6em;
+  }
+  
+  #medialink {
+    font-size: 1.6em;
+  }
+
+  .contentdiv {
+    top: 350px;
+    left: 250px;
+    padding: 10px 100px;
+    columns: 650px 3;
+    min-height: 20%;
+    font-size: 2em;
+  }
+  
+  .contentdiv-contact {
+    top: 350px;
+    left: 250px;
+    width: 80%;
+  }
+  
+  p,
+  h3 {
+    margin-top: 0;
+  }
+
+  .form-center {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  form {
+    border: 4px solid white;
+    padding: 35px;
+    width: 750px;
+    font-size: 1.8em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 24px 36px;
+    margin: 18px 0;
+    border: 3px solid white;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 16px 22px;
+    margin: 12px 0;
+    border-radius: 5px;
+  }
+} */
+
+@media (min-width: 2760px) {
+  header {
+    font-size: 3.8em;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  
+  .hcontainer {
+    padding: 22px;
+    word-spacing: 1.6em;
+  }
+
+  .medialinks {
+    top: 40%;
+    left: 60px;
+  }
+  
+  #medialink {
+    font-size: 2.4em;
+  }
+
+  .contentdiv {
+    top: 450px;
+    left: 350px;
+    padding: 10px 100px;
+    columns: 1000px 3;
+    min-height: 30%;
+    font-size: 3.4em;
+  }
+
+  .contact-title h1 {
+    font-size: 3.4em;
+  }
+
+  .form-center {
+    margin-top: 95px;
+    margin-bottom: 95px;
+  }
+  
+  form {
+    border: 6px solid white;
+    padding: 65px;
+    width: 1200px;
+    font-size: 3em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    border-radius: 7px;
+  }
+  
+  button[type="submit"] {
+    border-radius: 7px;
+  }
+}
+
 @media (max-width: 1119px) {
   .contentdiv {
     left: 50px;
