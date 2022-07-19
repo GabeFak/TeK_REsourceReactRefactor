@@ -153,21 +153,6 @@ nav#medialinktext {
 }
 /*/////////////////////////End_Media_Quieries/////////////////////////*/
 
-/*/////////////////////////Links_Visited/////////////////////////*/
-a.four {
-  text-decoration: none;
-  color: rgb(0, 255, 64);
-}
-
-a.four:hover {
-  color: #808080;
-}
-
-a.four:active {
-  color: #ff0000;
-}
-/*/////////////////////////End_Links_Visited/////////////////////////*/
-
 /*/////////////////////////Back_Button_Link/////////////////////////*/
 a.five {
   text-decoration: none;
@@ -184,7 +169,6 @@ a.five:active {
 /*/////////////////////////End_Back_Button_Link/////////////////////////*/
 
 /*/////////////////////////Content_Div/////////////////////////*/
-
 .contentdiv {
   position: absolute;
   top: 250px;
@@ -212,8 +196,6 @@ a.five:active {
   top: 150px;
   left: 150px;
   width: 80%;
-
-
   animation: fade-in 500ms forwards;
   transform: scale(0%);
   opacity: 0%;
@@ -223,99 +205,7 @@ p,
 h3 {
   margin-top: 0;
 }
-
-/*/////////////////////////Recomended_Widget////////////////////*/
-.recomendedImage {
-  position: inherit;
-  max-width: 100%;
-  object-fit: cover;
-  height: 100%;
-  width: auto\9;
-
-  animation: fade-in 500ms forwards;
-  transform: scale(0);
-  opacity: 0;
-}
-
-.recomended {
-  position: relative;
-}
-
-.discription {
-  position: absolute;
-  top: 40px;
-  left: 20px;
-  padding: 10px 20px 10px 20px;
-  margin-right: 20px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: italic;
-  font-size: 0.4em;
-  color: rgb(0, 255, 64);
-  letter-spacing: 0.2em;
-  background: rgba(0, 0, 0, 0.5);
-
-  animation: fade-in 500ms forwards;
-  transform: scale(0);
-  opacity: 0;
-}
-/*/////////////////////////End_Recomended_Widget////////////////////*/
-
-/*/////////////////////////Links_Visited_Widget////////////////////*/
-#links-visited-widget {
-  position: absolute;
-  top: 510px;
-  left: 100px;
-  margin-right: 100px;
-}
-
-.highLightBorder {
-  border: 5px solid rgb(0, 255, 64);
-  padding: 20px 50px;
-  font-family: "Roboto";
-  font-weight: 100;
-  font-style: italic;
-  font-size: 1em;
-  letter-spacing: 6px;
-  word-spacing: 0.2em;
-  text-align: left;
-  list-style: none;
-  color: white;
-}
-
-.all-the-links {
-  list-style: none;
-}
-
-.li-link-style {
-  display: inline-flex;
-}
-
-.copyButton {
-  text-decoration: none;
-  color: white;
-  border: 0;
-  background: none;
-  width: 75px;
-  font-family: "Roboto";
-  font-weight: 100;
-  font-style: italic;
-  font-size: 0.8em;
-}
-
-.copyButton:hover {
-  background-color: rgb(0, 255, 64, 0.15);
-}
-
-.copyButton:active {
-  background-color: rgb(128, 128, 128, 0.15);
-  color: rgb(0, 255, 64);
-}
-
-/*/////////////////////////End_Links_Visited_Widget////////////////////*/
-
 /*/////////////////////////End_Content_Div/////////////////////////*/
-
 
 /* Burger Menu */
 .bm-burger-button {
@@ -409,7 +299,6 @@ h3 {
 
 }
 
-
 .menu-item:hover{
   opacity: 0.7;
 }
@@ -417,16 +306,6 @@ h3 {
 .menu-item:active{
   color: #00f43d;
 }
-
-/* @keyframes fade-in {
-  0% {
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-} */
 
 .contact-title {
   font-family: "Roboto";
@@ -501,8 +380,6 @@ button[type="submit"]:hover {
   }
 }
 /*/////////////////////////Media_Quieries/////////////////////////*/
-
-
 @media (min-width: 1930px) {
   header {
     font-size: 2.7em;
@@ -648,86 +525,6 @@ button[type="submit"]:hover {
     border-radius: 6px;
   }
 }
-
-/* @media (min-width: 2560px){
-  header {
-    font-size: 2.7em;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    background-image: url(./components/SFFd.gif);
-  }
-  
-  .hcontainer {
-    padding: 16px;
-    word-spacing: 1.4em;
-  }
-
-  .medialinks {
-    top: 40%;
-    left: 40px;
-  }
-  
-  nav#medialinktext {
-    word-spacing: 1.4em;
-    letter-spacing: 0.6em;
-    letter-spacing: 0.6em;
-  }
-  
-  #medialink {
-    font-size: 1.6em;
-  }
-
-  .contentdiv {
-    top: 350px;
-    left: 250px;
-    padding: 10px 100px;
-    columns: 650px 3;
-    min-height: 20%;
-    font-size: 2em;
-  }
-  
-  .contentdiv-contact {
-    top: 350px;
-    left: 250px;
-    width: 80%;
-  }
-  
-  p,
-  h3 {
-    margin-top: 0;
-  }
-
-  .form-center {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-  
-  form {
-    border: 4px solid white;
-    padding: 35px;
-    width: 750px;
-    font-size: 1.8em;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 24px 36px;
-    margin: 18px 0;
-    border: 3px solid white;
-    border-radius: 5px;
-  }
-  
-  button[type="submit"] {
-    padding: 16px 22px;
-    margin: 12px 0;
-    border-radius: 5px;
-  }
-} */
 
 @media (min-width: 2760px) {
   header {
