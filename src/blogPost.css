@@ -109,6 +109,34 @@ a.three:active {
     #grabButton {
         order: 3;
     }
+  }
 
+  @media (max-width: 650px) {
+    .blogPostCDWrapper {
+      top: 150px;
+      left: 100px;
+      padding-right: 75px;
+     }
+
+     .contentdiv2 {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .blogPostCDWrapper {
+      padding-right: 50px;
+     }
+
+     .contentdiv2 {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .blogPostCDWrapper {
+      left: 25px;
+      padding-right: 25px;
+     }
   }
 /*//////End_MediaQuieries//////*/

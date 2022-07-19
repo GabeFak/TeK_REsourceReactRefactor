@@ -104,5 +104,31 @@ a.two:active {
   .innerTitleTex {
     top: 100px;
   }
+
+  .contentdivR {
+    top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .resourceImg {
+    height: 65vh;
+  }
+
+  .resourceImg:hover {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .contentdivR {
+    top: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contentdivR {
+    left: 0px;
+  }
 }
 /*/////////////////////////End_@MediaQ///////////////////////*/
