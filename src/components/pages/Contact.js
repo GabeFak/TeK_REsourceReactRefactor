@@ -10,7 +10,7 @@ const Contact = () => {
 
                 <input type="hidden" name="_captcha" value="false" ></input>
 
-                <input type="hidden" name="_next" value="http://localhost:3000/Contact" ></input>
+                <input type="hidden" name="_next" value="https://tekresourceblog.herokuapp.com/Contact" ></input>
                 First Name:<br/>
                 <input type="text" size="19" name="Contact-First-Name" required minLength="1"></input><br/><br/>
                 Last Name:<br/>
